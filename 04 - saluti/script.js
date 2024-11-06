@@ -4,10 +4,12 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
-
+function education(nominativo){
+    let saluto = `Ciao ${nominativo}`;
+    return  saluto;
+}
 // Invoca la funzione qui e stampa il risultato in console
-
-
+const saluto = education(name);
+console.log(saluto)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
