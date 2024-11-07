@@ -8,6 +8,8 @@ function education(nominativo){
     let saluto = `Ciao ${nominativo}`;
     return  saluto;
 }
+   const hi = (nominativo) => `Ciao ${nominativo}`;
+
 // Invoca la funzione qui e stampa il risultato in console
 const saluto = education(name);
 console.log(saluto)
