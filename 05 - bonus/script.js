@@ -11,13 +11,13 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 function greet (nominativo){
     let clock = new Date();
-    let hello = `Buongiorno ${nominativo}`;
+    let hello = `Buongiorno`;
     if(clock.getHours() > 17){
-        hello = `Buonasera ${nominativo}`;
+        hello = `Buonasera`;
     } else if(clock.getHours() > 13){
-        hello = `Buon pomeriggio ${nominativo}`;
+        hello = `Buon pomeriggio`;
     }
-    return hello;
+    return `${hello} ${nominativo}`;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
