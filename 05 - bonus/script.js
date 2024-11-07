@@ -9,10 +9,21 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function greet (nominativo){
+    let clock = new Date();
+    let hello = `Buongiorno ${nominativo}`;
+    if(clock.getHours() > 17){
+        hello = `Buonasera ${nominativo}`;
+    } else if(clock.getHours() > 13){
+        hello = `Buon pomeriggio ${nominativo}`;
+    }
+    return hello;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+// greet(nominativo);
+const saluto = greet(name);
+console.log(saluto);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
